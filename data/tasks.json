@@ -1,0 +1,7 @@
+[
+  { "id": "ftp-test-11", "title": "Zrobić test FTP 20' na trenażerze", "due": "2026-11-14" },
+  { "id": "mywhoosh", "title": "Zainstalować MyWhoosh i sparować trenażer", "due": "2026-11-15" },
+  { "id": "basen-karnet", "title": "Kupić karnet na basen", "due": "2026-11-17" },
+  { "id": "odprawa-1", "title": "Odprawa tygodnia: skopiować podsumowanie do Claude", "due": "2026-11-22", "sunday": true },
+  { "id": "plan-nast", "title": "Poprosić Claude o plan na tydzień 23–29.11", "due": "2026-11-22", "sunday": true }
+]

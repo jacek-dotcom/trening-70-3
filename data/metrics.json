@@ -1,0 +1,14 @@
+{
+  "ftp": [
+    { "date": "2026-09-12", "value": 175, "note": "Test 20' – pierwszy pomiar" },
+    { "date": "2026-11-07", "value": 185, "note": "Rampa na trenażerze" }
+  ],
+  "vo2max": [
+    { "date": "2026-09-12", "value": 41 },
+    { "date": "2026-11-07", "value": 43 }
+  ],
+  "restingHr": [
+    { "date": "2026-09-12", "value": 58 },
+    { "date": "2026-11-07", "value": 55 }
+  ]
+}

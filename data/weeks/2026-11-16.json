@@ -1,0 +1,99 @@
+{
+  "week": "2026-11-16",
+  "phase": "Wdrożenie",
+  "goal": "Oswoić strukturę tygodnia: 2× siła, 2× trenażer Z2, 2× basen, 1 dzień regeneracji.",
+  "days": {
+    "pn": {
+      "sport": "strength",
+      "title": "Siła A",
+      "duration": 50,
+      "goal": "Technika ruchów, lekkie ciężary, pełny zakres ruchu.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "duration": 10, "text": "5' rower/skakanka, krążenia bioder, koci grzbiet, 10 przysiadów bez obciążenia" },
+        { "part": "main", "name": "Część główna", "duration": 35, "exercises": [
+          { "name": "Przysiad goblet", "sets": 3, "reps": "10", "note": "tempo 3-1-1" },
+          { "name": "Martwy ciąg rumuński (hantle)", "sets": 3, "reps": "10" },
+          { "name": "Wykroki w tył", "sets": 3, "reps": "8/noga" },
+          { "name": "Wiosłowanie hantlem", "sets": 3, "reps": "10/ręka" },
+          { "name": "Pompki", "sets": 3, "reps": "8–12" },
+          { "name": "Plank", "sets": 3, "reps": "40 s" }
+        ] },
+        { "part": "cooldown", "name": "Schłodzenie", "duration": 5, "text": "Rozciąganie bioder i łydek, 5 oddechów przeponowych" }
+      ]
+    },
+    "wt": {
+      "sport": "swim",
+      "title": "Basen – technika",
+      "duration": 45,
+      "goal": "Pozycja ciała i oddech. Bez tempa, liczy się spokój.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "meters": 300, "text": "200 dowolny luźno + 100 grzbiet" },
+        { "part": "main", "name": "Technika", "meters": 800, "text": "4×50 catch-up (20 s przerwy), 4×50 jedna ręka (20 s), 4×50 kopanie z deską (20 s), 4×50 kraul z koncentracją na wydechu do wody (20 s)" },
+        { "part": "main", "name": "Pływanie ciągłe", "meters": 400, "text": "2×200 kraul spokojnie, 45 s przerwy" },
+        { "part": "cooldown", "name": "Schłodzenie", "meters": 100, "text": "100 dowolnie bardzo luźno" }
+      ]
+    },
+    "sr": {
+      "sport": "bike",
+      "title": "Trenażer Z2",
+      "duration": 60,
+      "goal": "Równa moc w Z2, kadencja 85–95. Rozmowa możliwa przez cały czas.",
+      "blocks": [
+        { "part": "warmup", "duration": 10, "ftp": 45, "ftpTo": 65 },
+        { "part": "main", "duration": 40, "ftp": 65, "text": "Z2 – co 10' 30 s z kadencją 100+" },
+        { "part": "cooldown", "duration": 10, "ftp": 60, "ftpTo": 40 }
+      ]
+    },
+    "cz": {
+      "sport": "strength",
+      "title": "Siła B",
+      "duration": 50,
+      "goal": "Jednonóż i stabilizacja tułowia – pod bieg i pływanie.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "duration": 10, "text": "5' rower, mostki biodrowe, bird-dog 2×8" },
+        { "part": "main", "name": "Część główna", "duration": 35, "exercises": [
+          { "name": "Przysiad bułgarski", "sets": 3, "reps": "8/noga" },
+          { "name": "Hip thrust", "sets": 3, "reps": "12" },
+          { "name": "Step-up na skrzynię", "sets": 3, "reps": "8/noga" },
+          { "name": "Wyciskanie hantli nad głowę", "sets": 3, "reps": "10" },
+          { "name": "Ściąganie drążka / podciąganie z gumą", "sets": 3, "reps": "8–10" },
+          { "name": "Side plank", "sets": 3, "reps": "30 s/strona" }
+        ] },
+        { "part": "cooldown", "name": "Schłodzenie", "duration": 5, "text": "Rolowanie ud i pośladków" }
+      ]
+    },
+    "pt": {
+      "sport": "recovery",
+      "title": "Regeneracja",
+      "duration": 30,
+      "goal": "Spacer lub bardzo luźny rower + mobility. Wczesny sen.",
+      "blocks": [
+        { "part": "main", "name": "Spacer", "duration": 20, "text": "Spokojny spacer, tętno poniżej 110" },
+        { "part": "main", "name": "Mobility", "duration": 10, "text": "Biodra 90/90, klatka piersiowa na wałku, łydki" }
+      ]
+    },
+    "sb": {
+      "sport": "bike",
+      "title": "Trenażer Z2",
+      "duration": 75,
+      "goal": "Dłuższa jazda w Z2. Pić co 15', coś zjeść po 45'.",
+      "blocks": [
+        { "part": "warmup", "duration": 10, "ftp": 45, "ftpTo": 65 },
+        { "part": "main", "duration": 55, "ftp": 68, "text": "Z2 równo, co 15' 1' wstanie z siodełka" },
+        { "part": "cooldown", "duration": 10, "ftp": 60, "ftpTo": 40 }
+      ]
+    },
+    "nd": {
+      "sport": "swim",
+      "title": "Basen + mobility",
+      "duration": 60,
+      "goal": "Luźne pływanie, potem 15' mobility. Wieczorem odprawa tygodnia.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "meters": 200, "text": "200 dowolny luźno" },
+        { "part": "main", "name": "Pływanie", "meters": 1000, "text": "10×100 kraul spokojnie, 30 s przerwy, oddech co 3" },
+        { "part": "cooldown", "name": "Schłodzenie", "meters": 100, "text": "100 grzbiet" },
+        { "part": "cooldown", "name": "Mobility", "duration": 15, "text": "Biodra, barki, klatka piersiowa – po 2' na pozycję" }
+      ]
+    }
+  }
+}

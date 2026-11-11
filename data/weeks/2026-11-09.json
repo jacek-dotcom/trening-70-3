@@ -1,0 +1,72 @@
+{
+  "week": "2026-11-09",
+  "phase": "Wdrożenie",
+  "goal": "Start od środy: rozruch na trenażerze, pierwsza siła, w sobotę test FTP 20' (ustawia strefy na kolejne tygodnie).",
+  "days": {
+    "sr": {
+      "sport": "bike",
+      "title": "Trenażer – rozruch Z2",
+      "duration": 45,
+      "goal": "Oswoić trenażer i pozycję. Spokojnie, kadencja 85–95, bez zrywów – w sobotę test.",
+      "blocks": [
+        { "part": "warmup", "duration": 10, "ftp": 45, "ftpTo": 60 },
+        { "part": "main", "duration": 25, "ftp": 62, "text": "Z2 równo; co 5' 30 s z kadencją 100+" },
+        { "part": "cooldown", "duration": 10, "ftp": 55, "ftpTo": 40 }
+      ]
+    },
+    "cz": {
+      "sport": "strength",
+      "title": "Siła A – wprowadzenie",
+      "duration": 40,
+      "goal": "Nauka ruchów, lekkie ciężary lub własna masa. Nie do zmęczenia – zostaw 3–4 powtórzenia w zapasie.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "duration": 8, "text": "5' marsz/rower, krążenia bioder i barków, 10 przysiadów bez obciążenia" },
+        { "part": "main", "name": "Część główna", "duration": 27, "exercises": [
+          { "name": "Przysiad goblet", "sets": 2, "reps": "10", "note": "tempo 3-1-1" },
+          { "name": "Martwy ciąg rumuński (hantle)", "sets": 2, "reps": "10" },
+          { "name": "Wykroki w tył", "sets": 2, "reps": "8/noga" },
+          { "name": "Wiosłowanie hantlem", "sets": 2, "reps": "10/ręka" },
+          { "name": "Pompki (na kolanach, jeśli trzeba)", "sets": 2, "reps": "8–10" },
+          { "name": "Plank", "sets": 2, "reps": "30 s" }
+        ] },
+        { "part": "cooldown", "name": "Schłodzenie", "duration": 5, "text": "Rozciąganie bioder, ud i łydek" }
+      ]
+    },
+    "pt": {
+      "sport": "recovery",
+      "title": "Regeneracja przed testem",
+      "duration": 30,
+      "goal": "Luźno. Spacer + mobility, wcześnie spać, dobrze zjeść i pić – jutro test.",
+      "blocks": [
+        { "part": "main", "name": "Spacer", "duration": 20, "text": "Spokojny spacer, tętno poniżej 110" },
+        { "part": "main", "name": "Mobility", "duration": 10, "text": "Biodra 90/90, klatka piersiowa na wałku, łydki" }
+      ]
+    },
+    "sb": {
+      "sport": "bike",
+      "title": "Test FTP 20'",
+      "duration": 60,
+      "goal": "Rozgrzewka, 5' mocno, 20' równo jak najmocniej. FTP = 95% średniej mocy z 20'. Wpisz wynik do data/metrics.json.",
+      "blocks": [
+        { "part": "warmup", "duration": 10, "ftp": 45, "ftpTo": 65 },
+        { "part": "main", "name": "Otwarcie", "duration": 5, "ftp": 100, "text": "Mocno, ale nie na maksa – wyczyścić nogi" },
+        { "part": "main", "name": "Luźno", "duration": 5, "ftp": 50 },
+        { "part": "main", "name": "Test 20'", "duration": 20, "ftp": 100, "text": "Równe tempo od początku; wynik = średnia moc × 0,95" },
+        { "part": "cooldown", "duration": 15, "ftp": 55, "ftpTo": 40 }
+      ]
+    },
+    "nd": {
+      "sport": "swim",
+      "title": "Basen – technika + mobility",
+      "duration": 50,
+      "goal": "Pierwszy basen: pozycja ciała i wydech do wody. Bez tempa. Wieczorem odprawa tygodnia.",
+      "blocks": [
+        { "part": "warmup", "name": "Rozgrzewka", "meters": 200, "text": "100 dowolny + 100 grzbiet, bardzo luźno" },
+        { "part": "main", "name": "Technika", "meters": 600, "text": "4×50 kopanie z deską (20 s), 4×50 catch-up (20 s), 4×50 kraul z wydechem do wody (20 s)" },
+        { "part": "main", "name": "Pływanie ciągłe", "meters": 200, "text": "4×50 kraul spokojnie, 30 s przerwy" },
+        { "part": "cooldown", "name": "Schłodzenie", "meters": 100, "text": "100 dowolnie" },
+        { "part": "cooldown", "name": "Mobility", "duration": 10, "text": "Barki, klatka piersiowa, biodra – po 2' na pozycję" }
+      ]
+    }
+  }
+}

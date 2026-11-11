@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Tryb ciemny: systemowy, albo wymuszony przez data-theme na <html>. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f2f2f7;
+  --bg-glow-1: rgba(255, 159, 10, 0.18);
+  --bg-glow-2: rgba(10, 132, 255, 0.16);
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-solid: #ffffff;
+  --surface-2: rgba(118, 118, 128, 0.08);
+  --border: rgba(0, 0, 0, 0.06);
+  --ink: #1d1d1f;
+  --ink-2: #6e6e73;
+  --ink-3: #aeaeb2;
+  --tint: #0a84ff;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 12px 32px -12px rgba(0,0,0,0.12);
+
+  --c-bike: #ff9500;
+  --c-swim: #007aff;
+  --c-strength: #af52de;
+  --c-recovery: #34c759;
+  --c-run: #ff2d55;
+  --c-rest: #8e8e93;
+}
+:root[data-theme="dark"] {
+  --bg: #000000;
+  --bg-glow-1: rgba(255, 159, 10, 0.12);
+  --bg-glow-2: rgba(10, 132, 255, 0.14);
+  --surface: rgba(28, 28, 30, 0.72);
+  --surface-solid: #1c1c1e;
+  --surface-2: rgba(118, 118, 128, 0.18);
+  --border: rgba(255, 255, 255, 0.08);
+  --ink: #f5f5f7;
+  --ink-2: #98989d;
+  --ink-3: #636366;
+  --tint: #0a84ff;
+  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 32px -12px rgba(0,0,0,0.6);
+  --c-bike: #ff9f0a;
+  --c-swim: #0a84ff;
+  --c-strength: #bf5af2;
+  --c-recovery: #30d158;
+  --c-run: #ff375f;
+  --c-rest: #8e8e93;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-solid: var(--surface-solid);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-tint: var(--tint);
+  --color-bike: var(--c-bike);
+  --color-swim: var(--c-swim);
+  --color-strength: var(--c-strength);
+  --color-recovery: var(--c-recovery);
+  --color-run: var(--c-run);
+  --color-rest: var(--c-rest);
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+  --radius-xl2: 22px;
+  --shadow-card: var(--shadow);
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
+}
+/* Delikatne poświaty w tle, jak na iOS/visionOS */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(60% 40% at 10% 0%, var(--bg-glow-1), transparent 70%),
+    radial-gradient(50% 40% at 100% 100%, var(--bg-glow-2), transparent 70%);
+}
+
+.glass {
+  background: var(--surface);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.press { transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s, opacity .18s; }
+.press:active { transform: scale(.97); }
+.fade-up { animation: fadeUp .35s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+.sheet-in { animation: sheetIn .32s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes sheetIn { from { opacity: 0; transform: translateY(24px) scale(.98) } to { opacity: 1; transform: none } }
+.backdrop-in { animation: fadeIn .25s ease-out both; }
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+input, textarea, select { font: inherit; color: inherit; }
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+.safe-b { padding-bottom: max(env(safe-area-inset-bottom), 12px); }
+.safe-t { padding-top: env(safe-area-inset-top); }

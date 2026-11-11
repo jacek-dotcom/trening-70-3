@@ -1,0 +1,26 @@
+{
+  "name": "Sezon 2026/27 – Ironman 70.3",
+  "phases": [
+    { "name": "Wdrożenie", "from": "2026-11-09", "to": "2026-12-20", "color": "gray" },
+    { "name": "Święta", "from": "2026-12-21", "to": "2027-01-03", "color": "green" },
+    { "name": "Baza I", "from": "2027-01-04", "to": "2027-02-14", "color": "blue" },
+    { "name": "Baza II", "from": "2027-02-15", "to": "2027-03-28", "color": "blue" },
+    { "name": "Baza III", "from": "2027-03-29", "to": "2027-05-09", "color": "blue" },
+    { "name": "Budowa I", "from": "2027-05-10", "to": "2027-06-20", "color": "orange" },
+    { "name": "Budowa II", "from": "2027-06-21", "to": "2027-07-18", "color": "orange" },
+    { "name": "Szczyt", "from": "2027-07-19", "to": "2027-08-01", "color": "red" },
+    { "name": "Taper", "from": "2027-08-02", "to": "2027-08-08", "color": "purple" }
+  ],
+  "races": [
+    { "date": "2027-08-08", "name": "Ironman 70.3", "priority": "A" },
+    { "date": "2027-06-13", "name": "Triathlon olimpijski", "priority": "B" },
+    { "date": "2027-04-25", "name": "Bieg 10 km", "priority": "C" }
+  ],
+  "tests": [
+    { "date": "2026-11-14", "name": "Test FTP 20'" },
+    { "date": "2027-01-09", "name": "Test FTP 20'" },
+    { "date": "2027-03-06", "name": "Test FTP 20'" },
+    { "date": "2027-05-01", "name": "Test FTP 20'" },
+    { "date": "2027-06-26", "name": "Test FTP 20'" }
+  ]
+}
